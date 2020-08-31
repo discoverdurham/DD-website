@@ -1,7 +1,11 @@
-# Printable Itineraries
-Custom markup and styling to make itineraries hosted on the Discover Durham website aesthetically pleasing when printed out on a home or office computer.
+# Custom Styles for Printable Itineraries
+Use custom styling to make itineraries hosted on the Discover Durham website aesthetically pleasing when printed out on a home or office computer.
 
-## How to implement
+| Original Browser Version | Default Printer Version | Custom Styled Printer Version |
+| ----------------------- | ----------------------- | ----------------------------- |
+| ![screenshot of an itinerary as viewed in the browser](img/itinerary-on-screen.jpg) | ![screenshot of a printed itinerary with default styling](img/itinerary-printer-default.jpg) | ![screenshot of a printed itinerary with custom styling](img/itinerary-printer-custom.jpg) |
+
+## How to add the custom styles
 To activate these custom styles on a page of the website, do the following:
 1. Make sure you are logged into the Discover Durham website CMS.
 2. Visit the itinerary post or page you would like to make printer-friendly, and click the `edit this entry` button to edit the page contents.
