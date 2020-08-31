@@ -1,4 +1,4 @@
-/* Hide Craft CMS Row blocks in browser view */
+/* Hide CMS Row blocks in browser view */
 .ddx-itinerary ~ .area-wrapper .row {
   display: none;
 }
@@ -12,7 +12,7 @@
     display: none;
   }
 
-  /* Display Craft CMS Row blocks in printer view */
+  /* Display CMS Row blocks in printer view */
   .ddx-itinerary ~ .area-wrapper #main .row {
     display: -webkit-flex;
     display: flex;
