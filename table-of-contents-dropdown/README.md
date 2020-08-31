@@ -1,6 +1,8 @@
-# Table-of-Contents Dropdown
+# Table-of-Contents Dropdown Menu
 
 Sometimes posts or pages can become so long an unwieldy that users need help navigating their contents. This markup and script combination creates a hyperlinked dropdown list that will auto-populate with all H2s on the page that contain IDs.
+
+![screenshot of a the table-of-contents dropdown menu on a blogpost](img/table-of-contents-dropdown.jpg)
 
 ## How to add the dropdown list
 
@@ -8,10 +10,6 @@ Sometimes posts or pages can become so long an unwieldy that users need help nav
 ```
 <div class="blk from-wysiwyg">
   <form action="#" onsubmit="return false;">
-    <script type="text/javascript">
-      // Get the rendered height of the sticky header so it can later be used to offset the scroll-into-view position
-      var topFloatingHeaderHeight = document.getElementById("floating-header").offsetHeight;
-    </script>
     <label class="dir__legend" style="display:inline-block;">Table of Contents:</label><svg class="icon icon--bull" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/svg/sprite.svg#bull"></use></svg>
     <select id="table-of-contents" onchange="document.getElementById(options[selectedIndex].value).scrollIntoView(true); window.scrollBy(0, -topFloatingHeaderHeight);">
       <option value="default">Select a Business</option>
@@ -22,60 +20,7 @@ Sometimes posts or pages can become so long an unwieldy that users need help nav
 2. Add the rest of your page content. Give each H2 in your in content an ID so that the dropdown can link to it. You can add an ID to an H2 by clicking the `<>` button on the text editor to go into HTML view and then edit any H2 from `<h2>Intro</h2>` to `<h2 id="intro">Intro</h2>`.
 3. After adding the rest of your page content, add another **Embed Code** block at the very bottom. Leave the Heading empty and paste the following code into the Embed Code field:  
 ```
-<script type="text/javascript">
-// Script for creating a dynamic table of contents dropdown list from h2s
-
-var tableContents = document.getElementById("table-of-contents");
-
-// Scrape all the h2s in the document and save them to an array
-
-var h2List = document.getElementsByTagName("h2");
-
-for(var i = 0; i < h2List.length; i++) {
-
-  // for each h2 in the array, create a new option in the dropdown. Use the h2's inner text as the option text and the h2's id as the option value
-
-  var option = document.createElement("option");
-
-  var txt = document.createTextNode(h2List[i].innerText);
-
-  option.appendChild(txt);
-
-  option.setAttribute("value",h2List[i].id);
-
-  tableContents.insertBefore(option,tableContents.lastChild);
-
-}
-
-
-// Allow jumping to anchor links with javascript
-
-window.addEventListener("DOMContentLoaded", function(e) {
-
-  var links = document.getElementsByTagName("A");
-
-  for(var i=0; i < links.length; i++) {
-
-    if(!links[i].hash) continue;
-
-    if(links[i].origin + links[i].pathname != self.location.href) continue;
-
-    (function(anchorPoint) {
-
-      links[i].addEventListener("click", function(e) {
-
-        anchorPoint.scrollIntoView(true);
-
-        e.preventDefault();
-
-      }, false);
-
-    })(document.getElementById(links[i].hash.replace(/#/, "")));
-
-  }
-
-}, false);
-</script>
+<script type="text/javascript" src="https://jonathanelee.github.io/DD-website/table-of-contents-dropdown/script.js"></script>
 ```
 4. Save/publish the page.
 
