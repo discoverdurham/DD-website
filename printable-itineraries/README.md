@@ -3,7 +3,7 @@ Use custom styling to make itineraries hosted on the Discover Durham website aes
 
 | Original Browser Version | Default Printer Version | Custom Styled Printer Version |
 | ----------------------- | ----------------------- | ----------------------------- |
-| ![screenshot of an itinerary as viewed in the browser](img/itinerary-on-screen.jpg) | ![screenshot of a printed itinerary with default styling](img/itinerary-printer-default.jpg) | ![screenshot of a printed itinerary with custom styling](img/itinerary-printer-custom.jpg) |
+| ![screenshot of an itinerary as viewed in the browser](img/itinerary-on-screen.png) | ![screenshot of a printed itinerary with default styling](img/itinerary-printer-default.png) | ![screenshot of a printed itinerary with custom styling](img/itinerary-printer-custom.png) |
 
 ## How to add the custom styles
 To activate these custom styles on a page of the website, do the following:
@@ -12,7 +12,7 @@ To activate these custom styles on a page of the website, do the following:
 3. In the page editor, click on the `Digital Marketing` tab.
 4. In the **Head Analytics/Tracking Code** field, paste the following code (this will link the custom printer styles to that page):
 ```
-<link rel="stylesheet"  type="text/css" href="https://jonathanelee.github.io/DD-website/printable-itineraries/style.css" />
+<link rel="stylesheet"  type="text/css" href="https://discoverdurham.github.io/DD-website/printable-itineraries/style.css" />
 ```
 5. In the **Opening Body Analytics/Tracking Code** field, paste the following code (this will tag the content within the page appropriately so that the newly linked styles will be applied):
 ```
@@ -37,3 +37,6 @@ You can auto-hide/reveal other types of content as well by using the `ddx-print-
 To apply these classes to content in the rich text editor, click on the `<>` button to switch to HTML view, locate the element you'd like to add the behavior to, and type `class="ddx-print-hide"` or `class="ddx-print-reveal"` inside the opening tag.
 
 So for example, if I have `<p>Hello printer.</p>` in my text, and I only want it to be visible when printed, then I can add the neccesary class to the opening tag like so: `<p class="ddx-print-reveal">Hello printer.</p>`
+
+## Browser Support
+The custom print styles for itineraries are best supported in Chrome, Firefox, and Safari desktop browsers.
