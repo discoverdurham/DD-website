@@ -2,7 +2,7 @@
 
 Sometimes posts or pages can become so long an unwieldy that users need help navigating their contents. This markup and script combination creates a hyperlinked dropdown list that will auto-populate with all H2s on the page that contain IDs.
 
-![screenshot of a the table-of-contents dropdown menu on a blogpost](img/table-of-contents-dropdown.jpg)
+![screenshot of a the table-of-contents dropdown menu on a blogpost](img/table-of-contents-dropdown.png)
 
 ## How to add the dropdown list
 
@@ -17,10 +17,10 @@ Sometimes posts or pages can become so long an unwieldy that users need help nav
   </form>
 </div>
 ```
-2. Add the rest of your page content. Give each H2 in your in content an ID so that the dropdown can link to it. You can add an ID to an H2 by clicking the `<>` button on the text editor to go into HTML view and then edit any H2 from `<h2>Intro</h2>` to `<h2 id="intro">Intro</h2>`.
+2. Add the rest of your page content. Give each H2 in your in content an ID so that the dropdown can link to it. You can add an ID to an H2 by clicking the `<>` button on the text editor to go into HTML view and then edit any H2 from `<h2>Welcome to Durham</h2>` to `<h2 id="welcome-to-durham">Welcome to Durham</h2>`. (If you need help, you can learn more about using IDs in this video: [LevelUpTuts - What Is An Id in HTML](https://www.youtube.com/watch?v=QbPe1NxY4HE).)
 3. After adding the rest of your page content, add another **Embed Code** block at the very bottom. Leave the Heading empty and paste the following code into the Embed Code field:  
 ```
-<script type="text/javascript" src="https://jonathanelee.github.io/DD-website/table-of-contents-dropdown/script.js"></script>
+<script type="text/javascript" src="https://discoverdurham.github.io/DD-website/table-of-contents-dropdown/script.js"></script>
 ```
 4. Save/publish the page.
 
