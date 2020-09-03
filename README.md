@@ -6,12 +6,12 @@ Custom CSS styling to make itineraries hosted on the Discover Durham website aes
 
 | Original Browser Version | Default Printer Version | Custom Styled Printer Version |
 | ----------------------- | ----------------------- | ----------------------------- |
-| ![screenshot of an itinerary as viewed in the browser](printable-itineraries/img/itinerary-on-screen.jpg) | ![screenshot of a printed itinerary with default styling](printable-itineraries/img/itinerary-printer-default.jpg) | ![screenshot of a printed itinerary with custom styling](printable-itineraries/img/itinerary-printer-custom.jpg) |
+| ![screenshot of an itinerary as viewed in the browser](printable-itineraries/img/itinerary-on-screen.png) | ![screenshot of a printed itinerary with default styling](printable-itineraries/img/itinerary-printer-default.png) | ![screenshot of a printed itinerary with custom styling](printable-itineraries/img/itinerary-printer-custom.png) |
 
-💡 [Learn more in the **printable-itineraries** directory](printable-itineraries/README.md "Custom Styles for Printable Itineraries")
+💡 [Learn more in the **printable-itineraries** directory](printable-itineraries "Custom Styles for Printable Itineraries")
 
 ## Table-of-contents dropdown menu
 A dynamic, hyperlinked dropdown list that will auto-populate with all H2s on the page that contain IDs.
-![screenshot of a the table-of-contents dropdown menu on a blogpost](table-of-contents-dropdown/img/table-of-contents-dropdown.jpg)
+![screenshot of a the table-of-contents dropdown menu on a blogpost](table-of-contents-dropdown/img/table-of-contents-dropdown.png)
 
-💡 [Learn more in the **table-of-contents-dropdown** directory](table-of-contents-dropdown/README.md "Table-of-Contents Dropdown Menu")
+💡 [Learn more in the **table-of-contents-dropdown** directory](table-of-contents-dropdown "Table-of-Contents Dropdown Menu")
