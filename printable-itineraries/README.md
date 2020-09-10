@@ -18,11 +18,11 @@ To activate these custom styles on a page of the website, do the following:
 ```
 <div class="ddx-itinerary"></div>
 ```
-6. Save/publish the page for the changes to take effect. These styles mostly come into effect only when the page is printed (either to a physical printer or usinf the "Print to PDF" functionality), so the page may not look noticeably different. To see the styles in action, perform a test print by typing **CTRL+P** / **CMD+P**, which should print a version of the page with activated print styles.
+6. Save/publish the page for the changes to take effect. These styles mostly come into effect only when the page is printed (either to a physical printer or using the "Print to PDF" functionality), so the page may not look noticeably different. To see the styles in action, perform a test print by typing **CTRL+P** / **CMD+P**, which should print a version of the page with activated print styles.
 
 ## Automatically hidden and revealed content modules
-Once this style is applied, **row content modules** will be hidden when the page is viewed on screen, but will be visible when the page is printed. You can make use of this module to display information or calls-to-action that aren't needed online, but are useful for offline viewers when they are later referencing the printed page.
-Some examplesuses:
+Once this style is applied, **row content modules** will be hidden when the page is viewed on screen, but will be visible when the page is printed. You can make use of this module to display information or calls-to-action that aren't needed online, yet are useful for offline viewers when they are later referencing the printed page.  
+Some example uses:
 - Including CTAs that encourage users to follow Discover Durham social channels (normally links to these are visible in the menu and footer of the website, but those areas don't print, so it can be good to include this information somewhere printable)
 - Information on how users can get help and resources at the Visitor Info Center either in person or via phone
 ### Hiding and revealing other content with additional classes
@@ -36,7 +36,7 @@ You can auto-hide/reveal other types of content as well by using the `ddx-print-
 
 To apply these classes to content in the rich text editor, click on the `<>` button to switch to HTML view, locate the element you'd like to add the behavior to, and type `class="ddx-print-hide"` or `class="ddx-print-reveal"` inside the opening tag.
 
-So for example, if I have `<p>Hello printer.</p>` in my text, and I only want it to be visible when printed, then I can add the neccesary class to the opening tag like so: `<p class="ddx-print-reveal">Hello printer.</p>`
+So for example, if I have `<p>Hello printer.</p>` in my text, and I only want it to be visible when printed, then I can add the necessary class to the opening tag like so: `<p class="ddx-print-reveal">Hello printer.</p>`
 
 ## Browser Support
 The custom print styles for itineraries are best supported in Chrome, Firefox, and Safari desktop browsers.
