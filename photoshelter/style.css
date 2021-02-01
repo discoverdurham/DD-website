@@ -18,6 +18,7 @@
 
 @media (max-width: 692px) {
     .LibrisPortfolioCover::after {
+        bottom: 75%;
         font-size: 1.75em;
         letter-spacing: 5px;
     }
@@ -44,6 +45,12 @@
     color: white;
     font-size: 1.15em;
     opacity: .8;
+}
+
+@media (max-width: 692px) {
+    LibrisPortfolioCover + .footer-wrapper footer::before {
+        font-size: .85em;
+    }
 }
 
 
