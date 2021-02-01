@@ -16,6 +16,13 @@
     text-align: center;
 }
 
+@media (max-width: 692px) {
+    .LibrisPortfolioCover::after {
+        font-size: 1.75em;
+        letter-spacing: 5px;
+    }
+}
+
 .LibrisPortfolioCover:hover::after {
     color: #e6e6e6;
 }
