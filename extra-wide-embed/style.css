@@ -1,16 +1,16 @@
 @media (min-width: 900px) {
   .ddx-extra-wide-embed-wrapper {
     position: relative;
-    margin-left: -15%;
+    margin-left: -5%;
     width: 100vw;
     max-width: 880px;
   }
 }
 
 @media (min-width: 1200px) {
-  .ddx-extra-wide-embed--wrapper {
+  .ddx-extra-wide-embed-wrapper {
     position: relative;
-    margin-left: -27%;
+    margin-left: -17%;
     width: 100vw;
     max-width: 1080px;
   }
