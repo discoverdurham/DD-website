@@ -57,13 +57,13 @@
 
 /* Galleries: Restyle Download Button for Usability */
 
-ps-download#download {
+/* ps-download#download {
     flex-basis: 10em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+} */
 
 ps-download#download button {
     border: 3px solid #333;
@@ -97,7 +97,7 @@ ps-download#download iron-icon {
     width: auto;
 }
 
-ps-download#download svg {
+/* ps-download#download svg {
     max-width: 24px;
     margin-right: .5em;
-}
+} */
