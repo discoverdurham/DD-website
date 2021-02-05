@@ -63,7 +63,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-} */
+} 
 
 ps-download#download button {
     border: 3px solid #333;
@@ -71,7 +71,7 @@ ps-download#download button {
     height: 40px;
     padding: 0 7px;
     transition: border .3s ease-in-out, color .3s ease-in-out;
-}
+} */
 
 ps-download#download button:hover {
     border-color: #c0c0c0;
@@ -82,7 +82,7 @@ ps-download#download button iron-icon::after {
     font-weight:bold
 }
 
-ps-download#download:focus button iron-icon::after,
+/* ps-download#download:focus button iron-icon::after,
 ps-download#download button:focus iron-icon::after,
 ps-download#download button iron-icon:focus::after,
 ps-download#download button iron-icon::after:focus,
@@ -97,7 +97,7 @@ ps-download#download iron-icon {
     width: auto;
 }
 
-/* ps-download#download svg {
+ ps-download#download svg {
     max-width: 24px;
     margin-right: .5em;
 } */
