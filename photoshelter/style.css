@@ -101,3 +101,23 @@ ps-download#download iron-icon {
     max-width: 24px;
     margin-right: .5em;
 }
+
+
+
+/* Search: Restyle Download Button for Usability */
+
+tripod-button#download {
+    width: 10em;
+}
+
+tripod-button#download button#button {
+    width: 100%;
+    border-radius: 2em;
+}
+
+tripod-button#download iron-icon::after {content: 'DOWNLOAD';font-weight: bold;position: relative;bottom: -2px;}
+
+tripod-button#download iron-icon svg.style-scope.iron-icon {
+    max-width: 24px;
+    margin-right: .5em;
+}
