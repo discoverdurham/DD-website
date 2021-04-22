@@ -167,16 +167,16 @@
 }
 
 .highlight__intro .btn.btn--hollow {
-    background-color: #05ab96;
-    border-color: #05ab96;
+    background-color: #59ddc7;
+    border-color: #59ddc7;
     color: #131313;
 }
 
 .highlight__intro .btn.btn--hollow:active,
 .highlight__intro .btn.btn--hollow:focus,
 .highlight__intro .btn.btn--hollow:hover {
-    background-color: #370023;
-    outline-color: #370023;
+    background-color: #05ab96;
+    outline-color: #05ab96;
 }
 
 .btn.btn--brackets {
