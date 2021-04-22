@@ -1,0 +1,286 @@
+/* Styling logo and hero area */
+
+.logo.logo--hero > svg {
+    visibility: hidden;
+}
+
+.logo.logo--hero {
+    background: url(https://s3.us-east-1.amazonaws.com/durham-2019/images/Design-Elements/rediscover-durham-logo.svg) no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: background 1s ease-in-out;
+}
+
+.logo.logo--hero:hover {
+    background: url(https://s3.us-east-1.amazonaws.com/durham-2019/images/Design-Elements/rediscover-durham-logo-hover.svg) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.slides__caption-wrap {
+    background: url(https://s3.us-east-1.amazonaws.com/durham-2019/images/Design-Elements/top-angle-RD.svg) no-repeat;
+    background-position: bottom;
+    background-position-y: calc(100% - 47px);
+    background-size: contain;
+}
+
+@media (min-width: 920px) {
+    .slides__caption-wrap {
+        background-position: bottom;
+        background-position-y: calc(100% + 1px);
+    }
+}
+
+@media (min-width: 1531px) {
+    .slides__caption {
+        max-width: 20em;
+    }
+
+    .wthr__widget--hero {
+        max-width: 7.5vw;
+    }
+}
+
+.slides__pictured:after, .slides__pictured:before {
+    background-color: #05AB96;
+}
+
+#alert-msg, #breadcrumbs  {
+    display: none;   /* hiding the alert and breadcrumbs since these are more landing-style pages rather than something to drill down into */
+}
+
+/* Restyling Main body content */
+
+#main {
+    margin-top: -40vh;   /* we want to raise the main content higher up above the fold to drive conversions. Using VH units to keep it proportional to the browser height */
+    position: relative;   /* using positon relative so we can modify the z-index */
+    z-index: 2;   /* bumping up the z-index so that the content can appear on top of the hero image. By default, the hero image covers this */
+    overflow-x: hidden;
+}
+
+@media (max-width: 1875px) {
+    #main {
+        margin-top: -3em;
+    }
+}
+
+@media (max-width: 1530px) {
+    #main {
+        margin-top: 0;
+    }
+}
+
+/* Styling new Headline block */
+
+.blk__heading {
+    color: #65154b;
+}
+
+.blk__heading .u-highlight {
+    background: url(https://s3.us-east-1.amazonaws.com/durham-2019/images/Design-Elements/headline-highlight-RD.svg), no-repeat; /* Modifying background highlight to RD stroke */
+    background-size: 100%;
+    color: white;
+    padding-left: .25em;
+    padding-right: .65em;
+}
+
+/* Styling the CTA embed block by reusing and extending the highlight__item CSS */
+
+.embed-code + .embed-code {   /* using the adjacent sibling selector (+) to target an embed code block the immediately follows a first one. We can't add custom classes to this block, so work-around to target only the embed-code blocks we want */
+	max-width: 100%;
+	margin-bottom: 0;
+}
+
+.embed-code + .embed-code .highlight, .embed-code + .embed-code .highlight__item {
+	margin-bottom: 0;
+}
+
+.highlight__item {
+    overflow: visible; /* Making overflow visible so that we can position the nested RD bubble IMGs outside their parent DIVs */
+}
+
+.highlight__item.highlight__video {
+    background-color: #f7fcfc;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.highlight__item.highlight__video figure {
+    flex: 1 1 50%;
+    float: none;
+    padding: 0 0 0 1rem;
+}
+
+.highlight__item.highlight__video .highlight__summary {
+    padding: 0 1rem 0 0;
+    flex: 1 2 50%;
+}
+
+@media (max-width: 799px) {
+    .highlight__item.highlight__video {
+        display: block;
+    }
+
+    .highlight__item.highlight__video figure {
+        padding: 0 0 1rem 0;
+    }
+
+    .highlight__item.highlight__video .highlight__summary {
+        padding: 1rem 0 0 0;
+    }
+}
+
+/* Button modifications */
+
+.highlight__summary .btn:before,
+.highlight__summary .btn:after {
+    display: none;
+}
+
+.highlight__summary .btn,
+.h-tile .btn {
+    font-family: Plex Sans,Helvetica,Verdana,Segoe,sans-serif;
+    font-weight: 600;
+}
+
+.highlight__summary .btn:active,
+.highlight__summary .btn:focus,
+.h-tile .btn:active,
+.h-tile .btn:focus {
+    box-shadow: none;
+    box-shadow: 0 0 2px 1px #666;
+}
+
+.highlight__summary .btn {
+    background-color: #65154b;
+    border-color: #65154b;
+    color: white;
+    margin: 0 0 1rem;
+}
+
+.highlight__summary .btn:active,
+.highlight__summary .btn:focus,
+.highlight__summary .btn:hover {
+    text-decoration: none;
+    background-color: #370023;
+    outline-color: #370023;
+}
+
+.btn.btn--brackets {
+    margin: 1rem 0;
+    padding: .75rem;
+}
+
+.btn.btn--brackets::after {
+    content: "»";
+    display: inline;
+    padding-left: .25rem;
+}
+
+.btn.btn--rd-cta {
+    background-color: #59ddc7;
+    border-color: #59ddc7;
+    color: #131313;
+}
+
+.highlight__summary .btn.btn--rd-cta:active,
+.highlight__summary .btn.btn--rd-cta:focus,
+.highlight__summary .btn.btn--rd-cta:hover {
+    background-color: #8ED6D1;
+    outline-color: #8ED6D1;
+}
+
+.btn.h-tile__cta {
+    display: block;
+    margin: 1em auto;
+    background: #8ED6D1;
+    border-color: #8ED6D1;
+    color: #131313;
+}
+
+a:hover .btn.h-tile__cta {
+    background: #c0ffff;
+}
+
+.btn.h-tile__cta::after {
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background: url(/svg/link-external.svg) no-repeat 50%;
+    background-size: contain;
+    vertical-align: middle;
+    opacity: .8;
+    margin: -.3rem 0 -.1rem .5rem;
+}
+
+
+/* Bubble Images */
+
+.highlight__summary {
+    position: relative; /* Setting position relative so that we can position the nested RD bubble IMGs relative their parent DIV */
+    overflow: visible; /* Making overflow visible so that we can position the nested RD bubble IMGs outside their parent DIVs */
+}
+
+.rd-bubble-tile {
+    display: block;
+    position: absolute; /* Since parent DIV position is relative, we can now set this absolute and modify the positioning later in our CSS (see Page Specific Styles section at bottom) */
+    z-index: 10; /* Now that we've set position to absolute, we can set the z-index so it appears above other elements */
+    height: 25rem;
+    bottom: -16rem;
+}
+
+@media (max-width: 1480px) {
+    .highlight__item:nth-of-type(n) img.rd-bubble-tile {
+        height: auto; /* reset height from a fixed amount to auto -- we'll scale by width instead so we can use calc based on a defined width */
+        width: 7rem;
+        left: 47.5%; /* initial left value for browsers that don't support calc */
+        left: calc(50% - 5rem); 
+        bottom: initial; /* realign with bottom of parent DIV */
+    }
+}
+
+@media (max-width: 799px) {
+    .highlight__item:nth-of-type(n) img.rd-bubble-tile {
+        right: 2em;
+        left: auto;
+    }
+}
+
+.highlight__item.highlight__intro {
+    background: white;
+}
+
+/* Mods for Card Widget to make 4 column and more scannable */
+
+.card-entry h2 {
+    display: block;
+}
+
+@media print, screen and (min-width: 64em) {
+    .card-entry.large-4.columns {
+        width: 25%;
+    }
+}
+
+/* Mod for Full-Width Widget to make less dominating */
+
+.h-tile {
+    max-width: 1200px;
+}
+
+.h-tile__item {
+    height: 15em;
+}
+
+.h-tile__img {
+    min-height: 100%;
+}
+
+.h-tile__title {
+    flex-direction: column; /* Changing the flex direction so I can stack the two SPANs I've squeezed into the A element */
+}
+
+.h-tile__title {
+    padding: 2rem;
+}
