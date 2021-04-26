@@ -241,6 +241,7 @@ a:hover .btn.h-tile__cta {
     z-index: 10; /* Now that we've set position to absolute, we can set the z-index so it appears above other elements */
     height: 25rem;
     bottom: -16rem;
+    pointer-events: none;
 }
 
 @media (max-width: 1480px) {
