@@ -99,6 +99,12 @@
     overflow: visible; /* Making overflow visible so that we can position the nested RD bubble IMGs outside their parent DIVs */
 }
 
+.highlight__item::after { /* Now that overflow is visible, the floated FIGUREs may also break out of their parent DIVs. Using clearfix on a pseudo-element to solve this */
+    content: '';
+    clear: both;
+    display: table;
+}
+
 .highlight__item.highlight__video {
     background-color: #f7fcfc;
     display: flex;
