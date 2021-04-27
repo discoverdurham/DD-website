@@ -84,6 +84,10 @@
     padding-right: .65em;
 }
 
+.rd-intro {
+    font-size: 1.25em; /* bumping up the prominence of the intro text beneath the headline on each page */
+}
+
 /* Styling the CTA embed block by reusing and extending the highlight__item CSS */
 
 .embed-code + .embed-code {   /* using the adjacent sibling selector (+) to target an embed code block the immediately follows a first one. We can't add custom classes to this block, so work-around to target only the embed-code blocks we want */
