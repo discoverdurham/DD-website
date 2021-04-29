@@ -180,6 +180,7 @@
     background-color: #59ddc7;
     border-color: #59ddc7;
     color: #131313;
+    border-width: 2px;
 }
 
 .highlight__intro .btn.btn--hollow:active,
@@ -187,6 +188,23 @@
 .highlight__intro .btn.btn--hollow:hover {
     background-color: #05ab96;
     outline-color: #05ab96;
+}
+
+.btn + .btn {
+    margin-left: 1.5em;
+}
+
+.highlight__intro .btn.btn--hollow.btn--secondary {
+    background-color: #e5e5e5;
+    border-color: #b6b6b6;
+    border-width: 2px;
+    box-sizing: border-box;
+}
+
+.highlight__intro .btn.btn--hollow.btn--secondary:active,
+.highlight__intro .btn.btn--hollow.btn--secondary:focus,
+.highlight__intro .btn.btn--hollow.btn--secondary:hover {
+    background-color: #b6b6b6;
 }
 
 .btn.btn--brackets {
