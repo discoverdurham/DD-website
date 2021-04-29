@@ -226,8 +226,8 @@ nav.h-scroller + #main > .embed-code:first-of-type { /*If page has a NAV menu, w
 }
 
 .highlight__intro .btn.btn--hollow.btn--secondary {
-    background-color: #e5e5e5;
-    border-color: #d5d5d5;
+    background-color: white;
+    border-color: #b6b6b6;
     border-width: 2px;
     box-sizing: border-box;
 }
@@ -235,7 +235,7 @@ nav.h-scroller + #main > .embed-code:first-of-type { /*If page has a NAV menu, w
 .highlight__intro .btn.btn--hollow.btn--secondary:active,
 .highlight__intro .btn.btn--hollow.btn--secondary:focus,
 .highlight__intro .btn.btn--hollow.btn--secondary:hover {
-    background-color: #d5d5d5;
+    background-color: #e5e5e5;
 }
 
 .btn.btn--brackets {
