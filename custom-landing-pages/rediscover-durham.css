@@ -70,6 +70,37 @@
     }
 }
 
+/* Restyling NAV H-scroller menu for subpage nav list */
+
+nav.h-scroller { /* If page has a NAV menu, we'll reposition the nav menu to float above the hero image */
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    max-width: 80rem;
+    margin: -37vh auto 0;
+}
+
+@media (max-width: 1875px) {
+    nav.h-scroller {
+        margin-top: -3em;
+    }
+}
+
+@media (max-width: 1530px) {
+    nav.h-scroller {
+        margin-top: 0;
+    }
+}
+
+
+nav.h-scroller + #main { /* If page has a NAV menu, we'll reset the top-margin on the #MAIN element */
+    margin-top: 0;
+}
+
+nav.h-scroller + #main > .embed-code:first-of-type { /*If page has a NAV menu, we'll hide the first embed block (which should be empty anyways on these)  */
+    display: none;
+}
+
 /* Styling new Headline block */
 
 .blk__heading {
