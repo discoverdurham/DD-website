@@ -190,7 +190,7 @@
     outline-color: #05ab96;
 }
 
-.btn + .btn {
+.btn.btn--brackets + .btn.btn--brackets {
     margin-left: 1.5em;
 }
 
