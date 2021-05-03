@@ -1,0 +1,14 @@
+/* Printer styles for Itinerary > Supressing iFrames (Medium) */
+
+@media print {
+
+  /* Hide all embedded iframes */
+  .blk.from-wysiwyg iframe {
+      display: none !important;
+  }
+  
+  .blk.from-wysiwyg:nth-of-type(3n+1) iframe {
+      display: block !important;
+  }
+
+} /* End printer styles */
