@@ -122,5 +122,24 @@
   .ddx-itinerary ~ .area-wrapper .row + .blk h2 {
     border-top: none;
   }
+  
+  /* shrink images and rich media embeds so they're printer-friendly */
+  
+  .blk.from-wysiwyg figure {
+      max-width: 15em;
+      margin: 0 auto;
+  }
+  
+  .blk.from-wysiwyg figure img {
+      width: 15em !important;
+  }
+
+  figure iframe,
+  iframe.instagram-media {
+      max-height: 30em !important;
+      max-width: 15em !important;
+      min-width: 5em !important;
+      margin: 0 auto !important;
+  }
 
 } /* End printer styles */
