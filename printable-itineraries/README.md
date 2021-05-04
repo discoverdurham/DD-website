@@ -14,6 +14,15 @@ To activate these custom styles on a page of the website, do the following:
 ```
 <link rel="stylesheet"  type="text/css" href="https://discoverdurham.github.io/DD-website/printable-itineraries/style.css" />
 ```
+If your post has Instagram embeds, you may also copy and paste one of the following snippets of code into that same field:
+  1. To hide approx. 65% of Instagram embeds when printing (makes the printed piece more readible)
+  ```
+  <link rel="stylesheet"  type="text/css" href="https://discoverdurham.github.io/DD-website/printable-itineraries/style-iframe-supress-med.css" />
+  ```
+  2. To hide all Instagram embeds when printing (makes the printed piece much more condensed and readible)
+  ```
+  <link rel="stylesheet"  type="text/css" href="https://discoverdurham.github.io/DD-website/printable-itineraries/style-iframe-supress-all.css" />
+  ```
 5. In the **Opening Body Analytics/Tracking Code** field, paste the following code (this will tag the content within the page appropriately so that the newly linked styles will be applied):
 ```
 <div class="ddx-itinerary"></div>
