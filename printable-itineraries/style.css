@@ -27,7 +27,7 @@
   }
 
   /* Add background SVG at top of the content */
-  .ddx-itinerary ~ .area-wrapper > #main::before {
+  .ddx-itinerary ~ .area-wrapper #main::before {
     content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 595"><path fill-rule="evenodd" clip-rule="evenodd" fill="%238ED6D1" d="M0,358.7l537,84.4L0,397.6V358.7z"/><polygon fill-rule="evenodd" clip-rule="evenodd" fill="%2305AB96" points="1500,0 0,0 0,359.2 1500,595"/></svg>');
     height: 2em;
     width: 100%;
