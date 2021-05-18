@@ -1,0 +1,14 @@
+/**** EVENTS CALENDAR ***/
+/* Fixes for template HTML formatting issues on event listings */
+
+.content-wrapper--split > aside { /* restyle the aside when it is the direct child (>) of .content-wrapper--split (this only happends on the incorrectly formatted pages) */
+    padding: 0 1rem;
+}
+
+.content-wrapper--split > aside ~ .area-primary { /* Also target and restyle the adjacent (~) divs */
+    grid-row-start: 2;
+}
+
+.content-wrapper--split > aside ~ .area-secondary {
+    grid-row-end: span 2;
+}
