@@ -1,4 +1,13 @@
 /**** EVENTS CALENDAR ***/
+/* Fix for date picker going off-screen on mobile */
+
+@media (max-width: 1400px) {
+    #a11yPicker-toggle-1 + #a11yPicker { /* we have to use the toggle ID + adjacent sibling selector to target the date picker for the start date since the #a11yPicker ID is reused on the right date picker too */ */
+        right: auto;
+        left: 0;
+    }
+}
+
 /* Fixes for template HTML formatting issues on event listings */
 
 .content-wrapper--split > aside { /* restyle the aside when it is the direct child (>) of .content-wrapper--split (this only happends on the incorrectly formatted pages) */
