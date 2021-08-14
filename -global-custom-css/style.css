@@ -21,3 +21,62 @@
 .content-wrapper--split > aside ~ .area-secondary {
     grid-row-end: span 2;
 }
+
+/**** CUSTOM WIDGET TREATMENTS ****/
+/* DD-H-Tile */
+/* Mod for Full-Width Widget to make less dominating */
+
+.dd-h-tile {
+    max-width: 1200px;
+}
+
+.dd-h-tile .h-tile__item {
+    height: 15em;
+}
+
+.dd-h-tile .h-tile__img {
+    min-height: 100%;
+}
+
+.dd-h-tile .h-tile__title {
+    flex-direction: column; /* Changing the flex direction so I can stack the two SPANs I've squeezed into the A element */
+}
+
+.dd-h-tile .h-tile__title {
+    padding: 2rem;
+}
+/* BTN mods */
+.dd-h-tile .btn {
+    font-family: Plex Sans,Helvetica,Verdana,Segoe,sans-serif;
+    font-weight: 600;
+}
+
+.dd-h-tile .btn:active,
+.dd-h-tile .btn:focus {
+    box-shadow: none;
+    box-shadow: 0 0 2px 1px #666;
+}
+
+.dd-h-tile .btn.h-tile__cta {
+    display: block;
+    margin: 1em auto;
+    background: #8ED6D1;
+    border-color: #8ED6D1;
+    color: #131313;
+}
+
+.dd-h-tile a:hover .btn.h-tile__cta {
+    background: #c0ffff;
+}
+
+.dd-h-tile .btn.h-tile__cta::after {
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background: url(https://www.discoverdurham.com/svg/link-external.svg) no-repeat 50%;
+    background-size: contain;
+    vertical-align: middle;
+    opacity: .8;
+    margin: -.3rem 0 -.1rem .5rem;
+}
