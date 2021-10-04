@@ -20,6 +20,8 @@
     padding: 2rem;
 }
 
+/* BTN styles */
+
 .h-tile.rd-cta-banner .btn {
     font-family: Plex Sans,Helvetica,Verdana,Segoe,sans-serif;
     font-weight: 600;
@@ -47,4 +49,18 @@
     vertical-align: middle;
     opacity: .8;
     margin: -.3rem 0 -.1rem .5rem;
+}
+
+/* Styles for Rediscover Durham main CTA banner */
+
+
+.rd-logo-banner.rd-cta-banner .h-tile__item {
+    height: auto;
+    min-height: 15em;
+}
+
+.rd-logo-banner .rd-logo-svg {
+    margin: 1rem;
+    display: block;
+    max-width: 100%;
 }
