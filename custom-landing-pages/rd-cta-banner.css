@@ -1,0 +1,50 @@
+/* Mod for Full-Width Widget with RD-CTA-BANNER class to make less dominating and give greater visual affordance */
+
+.h-tile.rd-cta-banner {
+    max-width: 1200px;
+}
+
+.rd-cta-banner .h-tile__item {
+    height: 15em;
+}
+
+.rd-cta-banner .h-tile__img {
+    min-height: 100%;
+}
+
+.rd-cta-banner .h-tile__title {
+    flex-direction: column; /* Changing the flex direction so I can stack the two SPANs I've squeezed into the A element */
+}
+
+.rd-cta-banner .h-tile__title {
+    padding: 2rem;
+}
+
+.h-tile.rd-cta-banner .btn {
+    font-family: Plex Sans,Helvetica,Verdana,Segoe,sans-serif;
+    font-weight: 600;
+}
+
+.rd-cta-banner .btn.h-tile__cta {
+    display: block;
+    margin: 1em auto;
+    background: #8ED6D1;
+    border-color: #8ED6D1;
+    color: #131313;
+}
+
+.rd-cta-banner a:hover .btn.h-tile__cta {
+    background: #c0ffff;
+}
+
+.rd-cta-banner .btn.h-tile__cta::after {
+    content: "\000BB";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background: none;
+    background-size: contain;
+    vertical-align: middle;
+    opacity: .8;
+    margin: -.3rem 0 -.1rem .5rem;
+}
