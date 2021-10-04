@@ -53,10 +53,8 @@
 
 /* Styles for Rediscover Durham main CTA banner */
 
-
 .rd-logo-banner.rd-cta-banner .h-tile__item {
-    height: auto;
-    min-height: 15em;
+    min-height: 20em;
 }
 
 .rd-logo-banner .rd-logo-svg {
