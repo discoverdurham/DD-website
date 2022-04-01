@@ -53,12 +53,8 @@
 
 /* Styles for Hightail it to Durham main CTA banner */
 
-.ht-logo-banner.ht-cta-banner .h-tile__item {
-    min-height: 20em;
-}
-
 .ht-logo-banner .ht-logo-svg {
-    margin: 1rem;
+    margin: 0rem;
     display: block;
     max-width: 100%;
 }
