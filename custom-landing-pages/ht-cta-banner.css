@@ -1,0 +1,64 @@
+/* Mod for Full-Width Widget with HT-CTA-BANNER class to make less dominating and give greater visual affordance */
+
+.h-tile.ht-cta-banner {
+    max-width: 1200px;
+}
+
+.ht-cta-banner .h-tile__item {
+    height: 15em;
+}
+
+.ht-cta-banner .h-tile__img {
+    min-height: 100%;
+}
+
+.ht-cta-banner .h-tile__title {
+    flex-direction: column; /* Changing the flex direction so I can stack the two SPANs I've squeezed into the A element */
+}
+
+.ht-cta-banner .h-tile__title {
+    padding: 2rem;
+}
+
+/* BTN styles */
+
+.h-tile.ht-cta-banner .btn {
+    font-family: Plex Sans,Helvetica,Verdana,Segoe,sans-serif;
+    font-weight: 600;
+}
+
+.ht-cta-banner .btn.h-tile__cta {
+    display: block;
+    margin: 1em auto;
+    background: #8ED6D1;
+    border-color: #8ED6D1;
+    color: #131313;
+}
+
+.ht-cta-banner a:hover .btn.h-tile__cta {
+    background: #c0ffff;
+}
+
+.ht-cta-banner .btn.h-tile__cta::after {
+    content: "\000BB";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background: none;
+    background-size: contain;
+    vertical-align: middle;
+    opacity: .8;
+    margin: -.3rem 0 -.1rem .5rem;
+}
+
+/* Styles for Hightail it to Durham main CTA banner */
+
+.ht-logo-banner.ht-cta-banner .h-tile__item {
+    min-height: 20em;
+}
+
+.ht-logo-banner .ht-logo-svg {
+    margin: 1rem;
+    display: block;
+    max-width: 100%;
+}
