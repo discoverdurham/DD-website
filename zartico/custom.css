@@ -1,0 +1,41 @@
+/* Adding in DD Brand Fonts */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+[style*="gdcustomfont"], [font-family*="gdcustomfont"], .gd-dashboards-root, .gd-paragraph, .gd-typography, .gd-typography--h2, .kpi-value, .headline *, .viz-legend * {
+    font-family: IBM Plex Sans, Calibri, sans-serif !important;
+}
+
+.gd-dashboards-root, .gd-paragraph {
+    font-family: IBM Plex Sans, Calibri, sans-serif !important;
+}
+
+
+/* Improving Chart Label Text Contrast */
+
+g.gd-axis-label-drilling-disabled text.highcharts-drilldown-axis-label, .highcharts-axis-labels text {
+    color: #262626 !important;
+    fill: #262626 !important;
+}
+
+/* Replacing Color Palette */
+
+[fill="rgb(255,119,79)"] {
+    fill: #262626;
+}
+
+[style*="background-color: rgb(255, 119, 79)"] {
+    background-color: #262626 !important;
+}
+
+.is-kpi-positive {
+    color: #00c18d;
+}
+
+.is-kpi-negative {
+    color: #e54d42;
+}
+
+.headline .headline-compare-section-item {
+
+    color: #b6b6b6;
+}
